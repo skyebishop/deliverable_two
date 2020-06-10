@@ -24,13 +24,15 @@ public class deliverableTwo {
 	    int tailsCount = 0;
 	    
 	    for (int i = 0; i < numberOfFlips; i++) {
-	    	randomNumber = rn.nextInt(range);  
-	    	System.out.println(randomNumber);   
+	    	randomNumber = rn.nextInt(range); 
+	    	 for (int j = 0; j < 1; j++) {
+	    		 if (randomNumber <= 50)   
+	    			 System.out.println("heads"); 
+	    			 else if (randomNumber >= 51)   
+		    			 System.out.println("tails"); 
+	    	   }
 	    }            
 	    	
 	}
 
 }
-
-
-     
