@@ -2,7 +2,6 @@ package deliverableTwo;
 
 import java.util.Scanner;
 import java.util.*;
-import java.lang.Math;
 
 public class deliverableTwo {
 	public static void main(String[] args) {
@@ -15,16 +14,21 @@ public class deliverableTwo {
 	    	headsOrTailsGuess = scnr.nextLine();
 	    System.out.println("How many times shall we flip a coin?");
 	    	numberOfFlips = scnr.nextInt();
-
-	    boolean[] value = new boolean[100];
-	    Random rand = new Random();
+	    
+	    Random rd = new Random();
+	    boolean bn = rd.nextBoolean();
+	    int headsCount = 0;
+	    int tailsCount = 0;
 	    
 	    for (int i = 0; i < numberOfFlips; i++)
-	    	System.out.print ((value[i]) ? "heads, " : "tails, ");
-	    	System.out.println();
-	    }
-	    			    	
-	    }   	
+	    	if (bn == true)   
+	    	   headsCount++; 
+	    	 else if (bn == false)   
+	               tailsCount++; 
+	          System.out.println(" heads: " + headsCount + " tails: " + tailsCount);   
+	               
 	    	
+	}
+}
 
-
+         
