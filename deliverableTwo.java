@@ -30,8 +30,15 @@ public class deliverableTwo {
 	    			 System.out.println("heads"); 
 	    			 else if (randomNumber >= 51)   
 		    			 System.out.println("tails"); 
+	    		 for (int k = 0; k < 1; k++) {
+	    			 if (randomNumber <= 50)
+	    				 headsCount++;
+	    			 else if (randomNumber >= 51)
+	    				 tailsCount++;
+	    		 }
 	    	   }
-	    }            
+	    }   
+		 System.out.println( " heads: " + headsCount + " tails: " + tailsCount);
 	    	
 	}
 
