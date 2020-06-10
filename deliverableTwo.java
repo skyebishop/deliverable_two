@@ -20,9 +20,7 @@ public class deliverableTwo {
 	    int maximum = 100;
 	    int range = maximum - minimum +1; 
 	    int randomNumber = rn.nextInt(range);
-	    int headsCount;
-	    int tailsCount;
-	    int correctCount;
+	    int correctCount = 0;
 	    
 	    for (int i = 0; i < numberOfFlips; i++) {
 	    	randomNumber = rn.nextInt(range); 
@@ -32,22 +30,19 @@ public class deliverableTwo {
 	    			 else if (randomNumber >= 51)   
 		    			 System.out.println("tails"); 
 	    		 for (int k = 0; k < 1; k++) {
-	    			 if (randomNumber <= 50)
-	    				 headsCount++;
-	    			 else if (randomNumber >= 51)
-	    				 tailsCount++;
+	    			 if (randomNumber <= 50 && headsOrTailsGuess.equals("heads"))
+	    				 correctCount++;
+	    			 else if (randomNumber >= 51 && headsOrTailsGuess.equals("tails"))
+	    				 correctCount++;
 	    			 }
 	    		 }
 	    	   }
-	    } 
-		//if headsCount is greater than tailsCount and user picked heads then assign headsCount value to correctCount else if vice versa
-	    if 
-	    }	    
 	    
-	    System.out.println( " heads: " + headsCount + " tails: " + tailsCount);
-		 System.out.println( " your guess, " + headsOrTailsGuess + " came up " + ? + "time(s).");
+		//if headsCount is greater than tailsCount and user picked heads then assign headsCount value to correctCount else if vice versa
+	    
+	    
+	    System.out.println( " your guess " + headsOrTailsGuess + " correct count " + correctCount);
 
-	    	
 	}
-
 }
+	
