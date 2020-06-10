@@ -38,7 +38,7 @@ public class deliverableTwo {
 	    		 }
 	    	   }	    
 
-	    System.out.println( "\n" + "Your guess, " + headsOrTailsGuess + ", came up " + correctCount + " times." +"\n"+ "That's " + (correctCount * 100 / numberOfFlips) + "%");
+	    System.out.println( "\n" + "Your guess, " + headsOrTailsGuess + ", came up " + correctCount + " times." +"\n"+ "That's " + (correctCount * 100 / numberOfFlips) + "%.");
 
 	}
 }
