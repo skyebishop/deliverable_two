@@ -16,16 +16,15 @@ public class deliverableTwo {
 	    System.out.println("How many times shall we flip a coin?");
 	    	numberOfFlips = scnr.nextInt();
 
-	    Random randomBoolean = new Random();
-	    boolean value = randomBoolean.nextBoolean();
+	    boolean[] value = new boolean[100];
+	    Random rand = new Random();
 	    
-	    int i = 0;
-	    while (i < numberOfFlips) {
-	    	System.out.println( value );
-		    i++;
+	    for (int i = 0; i < numberOfFlips; i++)
+	    	System.out.print ((value[i]) ? "heads, " : "tails, ");
+	    	System.out.println();
 	    }
 	    			    	
 	    }   	
 	    	
-}
+
 
