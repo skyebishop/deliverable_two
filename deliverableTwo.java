@@ -15,20 +15,22 @@ public class deliverableTwo {
 	    System.out.println("How many times shall we flip a coin?");
 	    	numberOfFlips = scnr.nextInt();
 	    
-	    Random rd = new Random();
-	    boolean bn = rd.nextBoolean();
+	    Random rn = new Random();
+	    int minimum = 1;
+	    int maximum = 100;
+	    int range = maximum - minimum +1; 
+	    int randomNumber = rn.nextInt(range);
 	    int headsCount = 0;
 	    int tailsCount = 0;
 	    
-	    for (int i = 0; i < numberOfFlips; i++)
-	    	if (bn == true)   
-	    	   headsCount++; 
-	    	 else if (bn == false)   
-	               tailsCount++; 
-	          System.out.println(" heads: " + headsCount + " tails: " + tailsCount);   
-	               
+	    for (int i = 0; i < numberOfFlips; i++) {
+	    	randomNumber = rn.nextInt(range);  
+	    	System.out.println(randomNumber);   
+	    }            
 	    	
 	}
+
 }
 
-         
+
+     
