@@ -36,12 +36,9 @@ public class deliverableTwo {
 	    				 correctCount++;
 	    			 }
 	    		 }
-	    	   }
-	    
-		//if headsCount is greater than tailsCount and user picked heads then assign headsCount value to correctCount else if vice versa
-	    
-	    
-	    System.out.println( " your guess " + headsOrTailsGuess + " correct count " + correctCount);
+	    	   }	    
+
+	    System.out.println( "\n" + "Your guess, " + headsOrTailsGuess + ", came up " + correctCount + " times." +"\n"+ "That's " + (correctCount * 100 / numberOfFlips) + "%");
 
 	}
 }
